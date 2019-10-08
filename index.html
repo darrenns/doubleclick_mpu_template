@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>300_600</title>
+    <meta name="ad.size" content="width=300, height=600" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    
+    <!--[if lt IE 9]>
+		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    
+    <script src="https://s0.2mdn.net/ads/studio/Enabler.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script type="text/javascript" src="greensock.js"></script>
+    <script type="text/javascript" src="animation.js"></script>
+    
+</head>
+
+<body>
+    
+    <div id="banner">
+
+        <div id="FrameOne">   
+        </div>
+        
+        <img id="Logo" src="assets/logo.jpg" alt="">
+        <div id="cta">FIND OUT MORE</div>
+        <div id="bgexit"></div>
+        
+    </div>
+
+
+
+
+    <script>
+        // var clickTag = "https://www.eonenergy.com";
+        var clickArea = document.getElementById("bgexit");
+        clickArea.addEventListener("click", clickBtn, false);
+        clickArea.addEventListener("mouseover", mouseoverBtn, false);
+        clickArea.addEventListener("mouseleave", mouseleaveBtn, false);
+        function clickBtn() {
+            Enabler.exit('Background Exit');
+            //window.open(window.clickTag);
+        }
+
+        function mouseoverBtn() {
+           cta.style.backgroundColor = "#575755";
+        }
+
+        function mouseleaveBtn() {
+            cta.style.backgroundColor = "#333";
+        }
+    </script>
+
+</body>
+
+</html>
